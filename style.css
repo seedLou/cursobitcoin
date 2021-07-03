@@ -1,0 +1,549 @@
+body{
+    margin: 0;
+}
+
+/* LAYOUT COMIENZA */
+
+#indexFlex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#flexHeader{
+
+    width: 100%;
+    height: 10vh;
+}
+
+#indexImg{
+
+    width: 100%;
+    height: 90vh;
+
+}
+
+#indexDescr{
+
+    width: 100%;
+    height: 30vh;
+
+}
+
+#indexForm{
+
+    width: 100%;
+    height: 40vh;
+
+}
+
+#flexFooter{
+
+    width: 100%;
+    flex-grow: 1;
+}
+
+#comenta{
+    width: 100%;
+    height: 70vh;
+}
+
+/* LAYOUT TERMINA */
+
+/* NAV EMPIEZA */
+
+
+#flexHeader h1{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+    color: #A3864E;
+    font-size: 32px;
+}
+
+#flexHeader nav{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: #424242;
+}
+
+#headerUl{
+    list-style-type: none;
+    text-align: right;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#headerUl li {
+    display: inline;
+    color:#C6C4B7;
+    text-align: center;
+    padding: 20px;
+}
+
+.navButton{
+    background-color: #525866;
+    color: #C6C4B7;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+/* 
+.navButton:hover{
+    background-color: #756138;
+} */
+
+.navButton:focus{
+    transform: scale(.92);
+    border: none;
+    outline: none;
+}
+
+.navSelectorContenido{
+    display: none;
+    position:relative;
+    top: 184px;
+    left: -10px;
+    background-color: grey;
+    z-index: 2;
+}
+
+.navSelectorContenido a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.navSelector{
+    position: relative;
+    display: inline-block;
+}
+
+.navSelector:hover .navSelectorContenido{
+    display: block;
+}
+
+
+/* NAV TERMINA */
+
+/* IMG EMPIEZA */
+
+#indexImg img{
+
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+
+}
+
+#indexImg h2{
+
+    display: inline-block;
+    position: relative;
+    bottom: 130px;
+    background-color: #A3864E;
+    color: #C6C4B7;
+    padding: 8px;
+    margin-left: 5px;
+    border-radius: 7px;
+    text-shadow: 3px 3px 2px #756138;
+    font-size: 30px;
+}
+
+
+/* IMG TERMINA */
+
+
+/* DESCRP COMIENZA */
+
+#indexDescr{
+    width: 100%;
+    background-color: #424242;
+    display: flex;
+}
+#indexDescr p{
+    color:#C6C4B7;
+    margin: 50px;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* DESCRP TERMINA */
+
+/* FORM EMPIEZA */
+
+#indexForm{
+
+    display: flex;
+    background-color: #525866;
+}
+
+#indexForm form{
+
+    background-color: #525866;
+    width: 500px;
+    margin-right: 80px;
+}
+
+#indexForm fieldset{
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 90%;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#indexForm legend{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
+
+}
+
+#indexForm input{
+    font-size: 15px;
+    margin: 20px auto 20px auto;
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+    outline: 1px solid black;
+}
+
+.formInput{
+    background-color: #424242;
+    color: #A3864E;
+}
+
+.formInput::placeholder{
+    color: #A3864E;
+}
+
+.formSubmit{
+    background-color:#A3864E;
+    border: none;
+}
+
+.formSubmit:hover{
+    background-color: #756138;
+}
+
+.formSubmit:active{
+    transform: scale(.98);
+}
+
+#indexFormTitle{
+    margin: auto;
+}
+
+#indexFormTitle div{
+    width: 40%;
+    align-self: center;
+}
+
+#indexFormTitle img{
+    width: 100%;
+    object-fit: contain;
+}
+
+#indexFormTitle p{
+    font-size: 29px;
+    margin: 0;
+    position: relative;
+    top: -10px;
+    text-align: center;
+}
+
+
+/* FORM TERMINA */
+
+/* FOOTER EMPIEZA */
+
+#flexFooter{
+    background-color: #424242;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+#flexFooter address{
+    margin: auto;
+    padding: 20px;
+
+}
+
+#mod{
+    margin: auto;
+}
+
+#flexFooter a{
+    color: #756138;
+}
+
+/* FOOTER TERMINA */
+
+/* CONCEPTO EMPIEZA*/
+
+.concepto-container{
+	display: grid;
+	grid-template-columns: 560px 1fr;
+	grid-template-rows: 157px 157px;
+	grid-template-areas:"uno dos" "uno tres";
+	row-gap: 5px;
+	column-gap: 5px;
+	justify-items: stretch;
+	align-items: stretch;
+	justify-content: center;
+	align-content: start;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    background-image: linear-gradient(#A3864E, #4e4126);
+	
+}
+
+.bodyVideos{
+    background-color: #525866;
+}
+
+.tituloVideo{
+	grid-area: dos;
+	text-align: center;
+	align-self: center;
+
+}
+
+.descripcion{
+	grid-area: tres;
+	align-self: end;
+        padding: 10px;
+    text-align: center;
+}
+
+.video{
+	grid-area: uno;
+	grid-column: 1/2;
+	grid-row: 1;
+	border: solid 1px #d4b272;
+}
+
+.mover{
+	align-self: end;
+}
+
+/* CONCEPTO TERMINA */
+
+/* COMENTA EMPIEZA */
+
+#comenta{
+    background-color: #525866;
+}
+
+#comentaForm fieldset{
+    border: none;
+    padding: 0;
+    display: grid;
+    width: 100%;
+    grid-template: 10vh 20vh 10vh 10vh/ 30vw 30vw 30vw;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 10px;
+}
+
+#legend{
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    text-align: center;
+    font-size: 29px;
+    margin-top: 15px;
+}
+
+#comentaForm textarea{
+    grid-column: 1/span3;
+    grid-row: 2/3;
+    resize: none;
+    width: 92vw;
+}
+#email{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#password{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+#formCheckbox{
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+
+
+.comentaFormInput{
+
+    background-color: #424242;
+    color: #A3864E;
+
+    font-size: 15px;
+
+    padding: 10px;
+    border: none;
+    outline: 1px solid black;
+
+}
+.comentaFormInput::placeholder{
+    color: #A3864E;
+}
+
+#comentaFormSubmit{
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+
+#comentaFormReset{
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+.comentaSubmit{
+    background-color:#A3864E;
+    border: none;
+}
+
+.comentaSubmit:hover{
+    background-color: #756138;
+}
+
+.comentaSubmit:active{
+    transform: scale(.98);
+}
+
+#formCheckbox{
+    text-align: center;
+    align-self: center;
+    padding: 25px;
+}
+
+
+/* COMENTA TERMINA */
+
+/* CONTACTAME EMPIEZA */
+
+#slider{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px 0 20px 0;
+    height: 80vh;
+    background-color: #525866;
+
+}
+
+#slider img{
+    width: 16vw;
+    height: 16vw;
+    border: solid 2px #A3864E;
+    border-radius: 100%;
+    z-index: 2;
+    object-fit:cover;
+    cursor: pointer;
+
+
+}
+
+#estep-container{
+    width: 0vw;
+    height: 8vw;
+    z-index: 0.5;
+    padding: 20px;
+    text-align: center;
+    visibility: hidden;
+    position: relative;
+    left: 30vw;
+    background-color: #A3864E;
+}
+
+.estep{
+    visibility: hidden;
+    padding-right: 20px;
+    color: #424242;
+}
+
+#estaimg{
+    position: relative;
+    display: inline-block;
+    left: 42vw;
+    transition-duration: 1s;
+
+
+}
+
+#estaimg:active + #estep-container{
+    visibility: visible;
+    width: 40vw;
+    left: 5vw;
+    transition-duration: 1s;
+}
+
+#estep-container:hover .estep{
+    visibility: visible;
+    transition-duration: 0.2s;
+}
+
+#estaimg:active{
+    left: 62vw;
+}
+
+#estaimg:active #slider{
+    justify-content: center;
+}
+
+#contactameh2{
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+    background-color: #424242;
+    color: #C6C4B7;
+}
+
+#contactameA{
+    text-decoration: none;
+    margin: 0;
+}
+
+#contactameA h3{
+    height: 60px;
+    margin: 0;
+    font-size: 50px;
+    color: #990000;
+    background-color: #756138;
+    padding: 20px;
+    text-align: center;
+}
+
+#contactameA h3:hover{
+    font-size: 55px;
+}
+
+
+/* CONTACTAME TERMINA */

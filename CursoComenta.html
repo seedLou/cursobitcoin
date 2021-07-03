@@ -1,0 +1,61 @@
+<html lang="en"><head>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="indexFlex">
+        <header id="flexHeader">
+            <nav>
+                <ul  id="headerUl">
+                    <h1>FredyBits</h1>
+                    <li><a href="index.html"><button class="navButton">Home</button></a></li>
+                    <div class="navSelector">
+                        <li ><button class="navButton">Curso</button></li>
+                        <ol class="navSelectorContenido">
+                            <li><a href="CursoCW.html#Concepto">Concepto</a></li>
+                            <li><a href="CursoCW.html#Wallet">Wallet</a></li>
+                            <li><a href="CursoIC.html#Comprar">Comprar</a></li>
+                            <li><a href="CursoIC.html#Invertir">Invertir</a></li>
+                            <li><a href="CursoComenta.html">Comenta</a></li>
+                        </ol>
+                    </div>
+                    <li><a href="Contactame.html"><button class="navButton">Contactame</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="comenta">
+
+            <form id="comentaForm" action="envia.php" method="POST" enctype="multipart/form-data" class="unirseComunidad">
+                <fieldset>
+                    <div id="legend"> <legend>Comenta que te pareció el curso</legend></div>
+                    <textarea class="comentaFormInput" name="opinión" placeholder="Escribe tu comentario"cols="30" rows="10"></textarea>
+
+                    <input class="comentaFormInput" id="email" type="email" placeholder="Email" maxlength="100">
+
+                    <input class="comentaFormInput" id="password" type="password" placeholder="*******">
+
+                    <div class="comentaFormInput" id="formCheckbox">
+                        <label for="name">No soy un robot</label>
+                        <input type="checkbox" name¨="captcha" value="1">
+                     </div>
+                    <input class="comentaSubmit" id="comentaFormSubmit" type="submit" name="submit" value="Comenta">
+                    <input class="comentaSubmit" id="comentaFormReset" type="reset" name="reset" value="Borra">
+                </fieldset>
+            </form>
+        </main>
+
+        <footer id="flexFooter">
+            <address>
+                <p>Fredybits@gmail.com</p>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://ar.linkedin.com/">Linkedin</a>
+            </address>
+            <p id="mod">Ultima modificación...</p>
+        </footer>
+    </section>
+
+</body></html>
